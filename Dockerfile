@@ -1,7 +1,7 @@
 # ET Social Intelligence V2 - Dockerfile
 # Multi-stage build for production
 
-FROM python:3.11-slim as builder
+FROM python:3.14-slim as builder
 
 # Install system dependencies for building
 RUN apt-get update && apt-get install -y \
@@ -23,7 +23,7 @@ RUN pip install --no-cache-dir --upgrade pip && \
 RUN python -m spacy download en_core_web_sm
 
 # Production stage
-FROM python:3.11-slim
+FROM python:3.14-slim
 
 # Install runtime dependencies
 RUN apt-get update && apt-get install -y \
