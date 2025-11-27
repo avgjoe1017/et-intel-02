@@ -1,0 +1,136 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-11-26T18:31:39.806695+00:00",
+    "test_cases": [
+      {
+        "comment_text": "💐 You earned it. You chose Blake",
+        "comment_likes": 5149,
+        "expected": {
+          "blake_sentiment": "< -0.5",
+          "sarcasm": true,
+          "emotion": "disgust|anger",
+          "stance": "oppose"
+        },
+        "description": "High-engagement sarcastic comment (5,149 likes)"
+      },
+      {
+        "comment_text": "Is it possible that Blake is telling the truth?",
+        "comment_likes": 97,
+        "expected": {
+          "blake_sentiment": "≈ 0.0",
+          "emotion": "neutral",
+          "stance": "neutral"
+        },
+        "description": "Neutral question, not supportive"
+      },
+      {
+        "comment_text": "I could never see Wicked without thinking of everything Lily Jay and her son lost",
+        "expected": {
+          "lily_jay_sentiment": "> 0.0",
+          "emotion": "disappointment|sadness",
+          "note": "Sentiment toward Lily Jay should be positive (sympathy), not negative"
+        },
+        "description": "Sympathy context - positive toward person, negative toward situation"
+      }
+    ],
+    "total_tests": 3
+  },
+  "detailed_results": [
+    {
+      "timestamp": "2025-11-26T18:31:36.054680+00:00",
+      "input": {
+        "comment_text": "💐 You earned it. You chose Blake",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel",
+        "comment_likes": 5149,
+        "target_entities": [
+          "Blake Lively",
+          "Colleen Hoover"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.7,
+          "Colleen Hoover": -0.5
+        },
+        "emotion": "sarcasm",
+        "stance": "oppose",
+        "sarcasm": true,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.7,\n    \"Colleen Hoover\": -0.5\n  },\n  \"emotion\": \"sarcasm\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"novel\"],\n  \"other_entities\": [],\n  \"sarcasm\": true,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.7,
+          "Colleen Hoover": -0.5
+        },
+        "emotion": "sarcasm",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "novel"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.2
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:31:38.393790+00:00",
+      "input": {
+        "comment_text": "Is it possible that Blake is telling the truth?",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel",
+        "comment_likes": 97,
+        "target_entities": [
+          "Blake Lively"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": 0.0
+        },
+        "emotion": "neutral",
+        "stance": "neutral",
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": 0.0\n  },\n  \"emotion\": \"neutral\",\n  \"stance\": \"neutral\",\n  \"topics\": [],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": 0.0
+        },
+        "emotion": "neutral",
+        "stance": "neutral",
+        "topics": [],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:31:39.799564+00:00",
+      "input": {
+        "comment_text": "I could never see Wicked without thinking of everything Lily Jay and her son lost",
+        "post_caption": "",
+        "comment_likes": 0,
+        "target_entities": []
+      },
+      "output": {
+        "entity_scores": {},
+        "emotion": "disappointment",
+        "stance": "support",
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {},\n  \"emotion\": \"disappointment\",\n  \"stance\": \"support\",\n  \"topics\": [],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {},
+        "emotion": "disappointment",
+        "stance": "support",
+        "topics": [],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      }
+    }
+  ]
+}

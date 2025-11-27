@@ -62,6 +62,10 @@ class IngestionService:
             else:
                 stats["posts_updated"] += 1
             
+            # Skip comment creation if this is post metadata only (no actual comment)
+            if record.comment_author == "__POST_METADATA__":
+                continue
+            
             # Upsert comment
             existing = self.session.query(Comment).filter(
                 Comment.post_id == post.id,
@@ -112,7 +116,14 @@ class IngestionService:
         ).first()
         
         if post:
-            # Update raw_data in case API added new fields
+            # Update caption if provided (always update, not just if missing)
+            if record.post_caption:
+                post.caption = record.post_caption
+            # Update posted_at if we have post metadata (not just from comment timestamp)
+            if record.raw and record.raw.get("post_metadata"):
+                # Use the timestamp from the record if it's post metadata
+                post.posted_at = record.comment_timestamp
+            # Update raw_data
             post.raw_data = record.raw
             return (post, False)
         
@@ -120,8 +131,9 @@ class IngestionService:
             platform=record.platform,
             external_id=record.external_post_id,
             url=record.post_url,
+            caption=record.post_caption,
             subject_line=record.post_subject,
-            posted_at=record.comment_timestamp,  # Approximate from first comment
+            posted_at=record.comment_timestamp,
             raw_data=record.raw
         )
         self.session.add(post)

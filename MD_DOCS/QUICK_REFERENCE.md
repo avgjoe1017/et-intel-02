@@ -53,6 +53,59 @@ python cli.py enrich --days 7
 python cli.py enrich --since 2024-01-01
 ```
 
+### Analytics (Week 3)
+```bash
+# Show top entities
+python cli.py top-entities --days 7 --limit 10
+
+# Export top entities to CSV
+python cli.py top-entities --days 7 --export top_entities.csv
+
+# Check velocity alert
+python cli.py velocity "Taylor Swift" --hours 72
+
+# Show sentiment history
+python cli.py sentiment-history "Blake Lively" --days 30
+
+# Export sentiment history
+python cli.py sentiment-history "Blake Lively" --export history.csv
+
+# Create performance indexes
+python cli.py create-indexes
+```
+
+### Reporting (Week 5)
+```bash
+# Generate intelligence brief
+python cli.py brief --start 2024-01-01 --end 2024-01-07
+
+# Brief with platform filter
+python cli.py brief --start 2024-01-01 --end 2024-01-07 \
+    --platforms instagram --platforms youtube
+
+# Brief with custom filename
+python cli.py brief --start 2024-01-01 --end 2024-01-07 \
+    --output weekly_brief.pdf
+
+# Brief with JSON export
+python cli.py brief --start 2024-01-01 --end 2024-01-07 --json
+```
+
+### System Information (Week 4)
+```bash
+# Show version and system info
+python cli.py version
+
+# Detailed database status
+python cli.py status --detailed
+
+# Verbose mode for debugging
+python cli.py enrich --days 7 --verbose
+
+# Force reinitialize database
+python cli.py init --force
+```
+
 ### Database Operations
 ```bash
 # Create migration

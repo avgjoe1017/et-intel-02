@@ -35,6 +35,7 @@ class MonitoredEntity(Base):
     
     # Relationships
     signals: Mapped[List["ExtractedSignal"]] = relationship(back_populates="entity")
+    review_queue_items: Mapped[List["ReviewQueue"]] = relationship(back_populates="assigned_entity")
 
     def __repr__(self) -> str:
         return f"<MonitoredEntity(id={self.id}, name={self.name}, type={self.entity_type})>"

@@ -89,11 +89,11 @@ python cli.py review-entities --min-mentions 10
 # 7. Add entity to monitoring
 python cli.py add-entity "Taylor Swift" --type person --aliases "T-Swift" "Tay"
 
-# Future: Generate intelligence brief (Week 5)
-# python cli.py brief --start 2024-01-01 --end 2024-01-07
+# 8. Generate intelligence brief
+python cli.py brief --start 2024-01-01 --end 2024-01-07 --output weekly_brief.pdf
 
-# Future: Launch dashboard (Week 6)
-# streamlit run dashboard.py
+# 9. Launch interactive dashboard
+streamlit run dashboard.py
 ```
 
 ## Project Structure
@@ -168,7 +168,27 @@ mypy et_intel_core/
 
 - [Architecture Document](ET_Intelligence_Rebuild_Architecture.md) - Complete system design
 - [Progress Log](PROGRESS.md) - Build progress and decisions
+- [Setup Guide](SETUP.md) - Step-by-step setup instructions
+- [Quick Reference](MD_DOCS/QUICK_REFERENCE.md) - CLI commands cheat sheet
 - [Production Instructions](PRODUCTION_INSTRUCTIONS.md) - Deployment guide
+
+### Weekly Guides
+- [Week 1: Foundation](MD_DOCS/WEEK_1_FOUNDATION.md) - Database & ingestion
+- [Week 2: NLP Layer](MD_DOCS/WEEK_2_NLP_LAYER.md) - Entity extraction & sentiment
+- [Week 3: Analytics](MD_DOCS/WEEK_3_ANALYTICS.md) - Metrics & queries
+- [Week 4: CLI Polish](MD_DOCS/WEEK_4_CLI_POLISH.md) - User experience & testing
+- [Week 5: Reporting](MD_DOCS/WEEK_5_REPORTING.md) - PDF generation & brief builder
+
+## Development Status
+
+✅ **Week 1**: Foundation (Database, Models, Ingestion)
+✅ **Week 2**: NLP Layer (Entity Extraction, Sentiment Analysis)
+✅ **Week 3**: Analytics (Velocity, History, Top Entities)
+✅ **Week 4**: CLI Polish (UX, Error Handling, Testing)
+✅ **Week 5**: Reporting (PDF Generation, Brief Builder)
+🔜 **Week 6**: Dashboard (Streamlit UI)
+🔜 **Week 7**: Production Prep (Docker, Deployment)
+🔜 **Week 8**: Polish & Deploy
 
 ## License
 

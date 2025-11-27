@@ -13,6 +13,52 @@
 - PostgreSQL database server
 - (Optional) Redis for caching (Phase 2)
 
+## Deployment Options
+
+### Option 1: Docker (Recommended)
+
+**Quick Start with Docker Compose**:
+
+```bash
+# Clone repository
+git clone <repo-url> et-intel-02
+cd et-intel-02
+
+# Create .env file
+cp env.example .env
+# Edit .env with your settings
+
+# Start services
+docker-compose up -d
+
+# Initialize database
+docker-compose exec app python cli.py init
+docker-compose exec app python cli.py seed-entities
+
+# Check status
+docker-compose exec app python cli.py status
+```
+
+**Services**:
+- `postgres`: PostgreSQL 15 database
+- `app`: ET Intelligence application
+- `dashboard`: Streamlit dashboard (port 8501)
+
+**Access Dashboard**: `http://localhost:8501`
+
+**Stop Services**:
+```bash
+docker-compose down
+```
+
+**View Logs**:
+```bash
+docker-compose logs -f app
+docker-compose logs -f dashboard
+```
+
+### Option 2: Manual Installation
+
 ## Initial Setup
 
 ### 1. Install System Dependencies
@@ -123,27 +169,58 @@ Create `/etc/cron.d/et-intel`:
 
 ### Backups
 
-```bash
-# Daily backup script
-#!/bin/bash
-BACKUP_DIR="/backups/et-intel"
-DATE=$(date +%Y%m%d_%H%M%S)
-pg_dump -U et_intel_user et_intel | gzip > "$BACKUP_DIR/et_intel_$DATE.sql.gz"
+**Using the provided backup script**:
 
-# Keep only last 30 days
-find $BACKUP_DIR -name "et_intel_*.sql.gz" -mtime +30 -delete
+```bash
+# Make script executable
+chmod +x scripts/backup.sh
+
+# Run backup
+./scripts/backup.sh
+
+# Configure environment variables (optional)
+export BACKUP_DIR="/backups/et-intel"
+export RETENTION_DAYS=30
+export DATABASE_URL="postgresql://user:pass@host:5432/et_intel"
 ```
 
-Add to cron:
+**Add to cron**:
 ```cron
-0 1 * * * root /opt/et-intel-02/scripts/backup.sh
+# Daily backup at 1 AM
+0 1 * * * /opt/et-intel-02/scripts/backup.sh >> /var/log/et-intel/backup.log 2>&1
+```
+
+**Docker backup**:
+```bash
+# Backup from Docker container
+docker-compose exec postgres pg_dump -U et_intel_user et_intel | gzip > backup.sql.gz
 ```
 
 ### Restore from Backup
 
+**Using the provided restore script**:
+
+```bash
+# Make script executable
+chmod +x scripts/restore.sh
+
+# Restore from backup
+./scripts/restore.sh /backups/et-intel/et_intel_20240101_120000.sql.gz
+
+# Force restore (skip confirmation)
+./scripts/restore.sh /backups/et-intel/et_intel_20240101_120000.sql.gz --force
+```
+
+**Manual restore**:
 ```bash
 # Restore database
 gunzip -c /backups/et-intel/et_intel_20240101_120000.sql.gz | psql -U et_intel_user et_intel
+```
+
+**Docker restore**:
+```bash
+# Restore to Docker container
+gunzip -c backup.sql.gz | docker-compose exec -T postgres psql -U et_intel_user et_intel
 ```
 
 ### Database Migrations
@@ -163,7 +240,28 @@ alembic downgrade -1
 
 ## Monitoring
 
-### Log Files
+### Logging
+
+**Structured Logging**:
+
+The system uses structured logging with JSON output support.
+
+```python
+from et_intel_core.logging_config import setup_logging, get_logger
+
+# Configure logging
+setup_logging(
+    log_level="INFO",
+    log_file=Path("/var/log/et-intel/app.log"),
+    use_json=True  # For structured logs
+)
+
+# Use logger in code
+logger = get_logger(__name__)
+logger.info("Processing entities...")
+```
+
+**Log Files**:
 
 Create log directory:
 ```bash
@@ -171,23 +269,42 @@ sudo mkdir -p /var/log/et-intel
 sudo chown etuser:etuser /var/log/et-intel
 ```
 
+**Log Rotation**: Configured automatically (10MB files, 5 backups)
+
+**Docker Logs**:
+```bash
+# View application logs
+docker-compose logs -f app
+
+# View dashboard logs
+docker-compose logs -f dashboard
+
+# View database logs
+docker-compose logs -f postgres
+```
+
 ### Health Checks
 
-Create `/opt/et-intel-02/scripts/health_check.sh`:
+**Using the provided health check script**:
 
 ```bash
-#!/bin/bash
-# Check database connectivity
-python -c "from et_intel_core.db import get_session; get_session().execute('SELECT 1')"
-if [ $? -eq 0 ]; then
-    echo "✓ Database connection OK"
-else
-    echo "✗ Database connection FAILED"
-    exit 1
-fi
+# Make script executable
+chmod +x scripts/health_check.sh
 
-# Check record counts
-python cli.py status
+# Run health check
+./scripts/health_check.sh
+```
+
+**Docker health check**:
+```bash
+# Health check in Docker
+docker-compose exec app ./scripts/health_check.sh
+```
+
+**Automated monitoring**:
+```bash
+# Add to cron (every 5 minutes)
+*/5 * * * * /opt/et-intel-02/scripts/health_check.sh >> /var/log/et-intel/health.log 2>&1
 ```
 
 ### Monitoring Metrics

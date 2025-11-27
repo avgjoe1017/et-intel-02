@@ -32,6 +32,8 @@ class Post(Base):
     external_id: Mapped[str] = mapped_column(String, index=True)
     url: Mapped[str] = mapped_column(String)
     
+    # Post content
+    caption: Mapped[Optional[str]] = mapped_column(String, nullable=True)  # Post caption/description
     # Editorial context (what is this post about?)
     subject_line: Mapped[Optional[str]] = mapped_column(String, nullable=True)
     posted_at: Mapped[datetime] = mapped_column(DateTime(timezone=True))

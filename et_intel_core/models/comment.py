@@ -53,7 +53,7 @@ class Comment(Base):
     )
 
     # For future extensions (language, toxicity, etc.)
-    metadata: Mapped[dict] = mapped_column(JSONB, default=dict)
+    extra_data: Mapped[dict] = mapped_column(JSONB, default=dict)
 
     # Relationships
     post: Mapped["Post"] = relationship(back_populates="comments")
@@ -69,6 +69,7 @@ class Comment(Base):
         back_populates="comment",
         cascade="all, delete-orphan"
     )
+    review_queue_items: Mapped[List["ReviewQueue"]] = relationship(back_populates="comment")
 
     def __repr__(self) -> str:
         return f"<Comment(id={self.id}, author={self.author_name}, text={self.text[:50]}...)>"

@@ -1,0 +1,86 @@
+# ET Social Intelligence V2 - Docker Compose
+# Production-ready setup with PostgreSQL
+
+version: '3.8'
+
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: et-intel-db
+    environment:
+      POSTGRES_DB: et_intel
+      POSTGRES_USER: et_intel_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-change_me_in_production}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "5433:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U et_intel_user -d et_intel"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+    networks:
+      - et-intel-network
+
+  # ET Intelligence Application
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: et-intel-app
+    environment:
+      DATABASE_URL: postgresql://et_intel_user:${POSTGRES_PASSWORD:-change_me_in_production}@postgres:5432/et_intel
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      SENTIMENT_BACKEND: ${SENTIMENT_BACKEND:-hybrid}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    volumes:
+      - ./data:/app/data:ro
+      - ./reports:/app/reports
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - et-intel-network
+    restart: unless-stopped
+    command: ["python", "cli.py", "status"]
+
+  # Streamlit Dashboard
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: et-intel-dashboard
+    environment:
+      DATABASE_URL: postgresql://et_intel_user:${POSTGRES_PASSWORD:-change_me_in_production}@postgres:5432/et_intel
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      SENTIMENT_BACKEND: ${SENTIMENT_BACKEND:-hybrid}
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    volumes:
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+    ports:
+      - "8501:8501"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      app:
+        condition: service_started
+    networks:
+      - et-intel-network
+    restart: unless-stopped
+    command: ["streamlit", "run", "dashboard.py", "--server.port=8501", "--server.address=0.0.0.0"]
+
+volumes:
+  postgres_data:
+    driver: local
+
+networks:
+  et-intel-network:
+    driver: bridge
+

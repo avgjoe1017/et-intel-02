@@ -8,7 +8,7 @@ import uuid
 from datetime import datetime
 from typing import Optional
 
-from sqlalchemy import String, DateTime, ForeignKey, Float, UniqueConstraint
+from sqlalchemy import String, DateTime, ForeignKey, Float, UniqueConstraint, Index
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 from sqlalchemy.dialects.postgresql import UUID
 
@@ -71,7 +71,8 @@ class ExtractedSignal(Base):
     comment: Mapped["Comment"] = relationship(back_populates="signals")
     entity: Mapped[Optional["MonitoredEntity"]] = relationship(back_populates="signals")
     
-    # Indexes for fast querying
+    # FIX 10: Indexes for fast querying
+    # All analytics queries filter by signal_type, many also filter by entity_id
     __table_args__ = (
         # Prevent duplicate signals (same comment + entity + type + model)
         UniqueConstraint(
@@ -81,6 +82,11 @@ class ExtractedSignal(Base):
             'source_model',
             name='uq_signal_identity'
         ),
+        # Performance indexes for common query patterns
+        Index('ix_signals_type', 'signal_type'),
+        Index('ix_signals_entity_type', 'entity_id', 'signal_type'),
+        Index('ix_signals_comment', 'comment_id'),
+        Index('ix_signals_numeric', 'signal_type', 'numeric_value'),
     )
 
     def __repr__(self) -> str:

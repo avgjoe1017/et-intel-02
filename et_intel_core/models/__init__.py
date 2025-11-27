@@ -20,6 +20,7 @@ from et_intel_core.models.comment import Comment
 from et_intel_core.models.monitored_entity import MonitoredEntity
 from et_intel_core.models.extracted_signal import ExtractedSignal
 from et_intel_core.models.discovered_entity import DiscoveredEntity
+from et_intel_core.models.review_queue import ReviewQueue
 
 __all__ = [
     "Base",
@@ -32,5 +33,6 @@ __all__ = [
     "MonitoredEntity",
     "ExtractedSignal",
     "DiscoveredEntity",
+    "ReviewQueue",
 ]
 

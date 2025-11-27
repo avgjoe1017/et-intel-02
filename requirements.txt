@@ -31,9 +31,22 @@ streamlit==1.29.0
 # Testing
 pytest==7.4.3
 pytest-cov==4.1.0
+pytest-benchmark==4.0.0
+pytest-xdist==3.5.0  # Parallel test execution
+pytest-timeout==2.2.0  # Test timeouts
+
+# Security
+safety==2.3.5
+bandit==1.7.5
+
+# Monitoring
+psutil==5.9.6  # System metrics
 
 # Development
 black==23.12.1
 flake8==6.1.0
 mypy==1.7.1
+
+# Apify Integration
+apify-client==1.7.0
 

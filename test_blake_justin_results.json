@@ -1,0 +1,1350 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-11-26T18:23:01.716078+00:00",
+    "comments_tested": 25,
+    "entities_available": [
+      "Blake Lively",
+      "Justin Baldoni",
+      "Ryan Reynolds",
+      "Taylor Swift",
+      "Travis Kelce",
+      "It Ends With Us",
+      "Taylor & Travis",
+      "Blake & Ryan"
+    ],
+    "total_api_calls": 25,
+    "test_type": "Blake/Justin controversy comments"
+  },
+  "statistics": {
+    "with_entity_scores": 25,
+    "blake_scores_count": 18,
+    "justin_scores_count": 16,
+    "blake_avg_sentiment": -0.5388888888888889,
+    "justin_avg_sentiment": 0.15625,
+    "emotion_distribution": {
+      "disappointment": 8,
+      "disgust": 10,
+      "joy": 3,
+      "neutral": 3,
+      "anger": 1
+    },
+    "stance_distribution": {
+      "oppose": 18,
+      "support": 6,
+      "neutral": 1
+    },
+    "avg_toxicity": 0.316,
+    "high_toxicity_count": 5
+  },
+  "detailed_results": [
+    {
+      "timestamp": "2025-11-26T18:22:08.178710+00:00",
+      "input": {
+        "comment_text": "Guys unless there's information he did something can you guys grow up and learn that even celebrities can have normal breakups like us? Lol its literally been a couple of years at LEAST. We need to stop mentioning cole every time lily is mentioned, or vise versa, its weird behavior that the first thing you think about always is how lili and cole were a couple. Not saying you forget they ever happened but like the way cole sprouse is literally always brought up is so...weird...",
+        "post_caption": "Lili Reinhart is in her lover girl era — and we love that for her.⁠ ⁠ Lili met her man on TikTok (after she saw a video of him making fun of 'Riverdale') and slid into his DMs. They've been IG official since 2023.⁠ ⁠ She tells Marie Claire that they're currently navigating the whole long-distance thing as an actor couple. (She just shot 'The Love Hypothesis,' he's starring in Mindy Kaling's new series.)⁠ ⁠ It's deeply hard on me to be apart from the person I love. I'm a very domestic woman, and I love to be at home and sit on my couch with my person and my dog; there's nothing that brings me greater joy than that specifically.⁠ ⁠ (📸: Getty Images, Lili Reinhart).",
+        "comment_likes": 5,
+        "target_entities": [
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Lili Reinhart": 0.5,
+          "Cole Sprouse": -0.5,
+          "It Ends With Us": 0.0
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "celebrity relationships",
+          "breakups",
+          "fan behavior"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Lili Reinhart\": 0.5,\n    \"Cole Sprouse\": -0.5,\n    \"It Ends With Us\": 0.0\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"celebrity relationships\", \"breakups\", \"fan behavior\"],\n  \"other_entities\": [],\n  \"sarcasm\": true,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Lili Reinhart": 0.5,
+          "Cole Sprouse": -0.5,
+          "It Ends With Us": 0.0
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "celebrity relationships",
+          "breakups",
+          "fan behavior"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "blake_score": null,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:10.294371+00:00",
+      "input": {
+        "comment_text": "I could never see Wicked without thinking of everything Lily Jay and her son lost because of this movie... 💩💩💩",
+        "post_caption": "We're not ready to say goodbye. 💚🩷⁠ ⁠ Ariana Grande and Cynthia Erivo bid emotional farewells to Glinda and Elphaba as 'Wicked: For Good' is now in theaters. ⁠ ⁠ It's safe to say we've all been changed for the better. 🥹 Grab a tissue and scroll to see their tributes.⁠ ⁠ (📸/🎥: Wicked: For Good, Cynthia Erivo, Ariana Grande)⁠.",
+        "comment_likes": 0,
+        "target_entities": []
+      },
+      "output": {
+        "entity_scores": {
+          "Wicked": -0.5,
+          "Lily Jay": -1.0,
+          "Ariana Grande": 0.0,
+          "Cynthia Erivo": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "Wicked",
+          "Lily Jay"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Wicked\": -0.5,\n    \"Lily Jay\": -1.0,\n    \"Ariana Grande\": 0.0,\n    \"Cynthia Erivo\": 0.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"Wicked\", \"Lily Jay\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.7\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Wicked": -0.5,
+          "Lily Jay": -1.0,
+          "Ariana Grande": 0.0,
+          "Cynthia Erivo": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "Wicked",
+          "Lily Jay"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": null,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:12.087555+00:00",
+      "input": {
+        "comment_text": "It's so crazy how justin didn't even attend her birthday and wished her happy birthday on his socials",
+        "post_caption": "Hailey Bieber turned 29 and she obviously did so in style.⁠ ⁠ (📸/🎥: Hailey Bieber).",
+        "comment_likes": 26,
+        "target_entities": [
+          "Justin Baldoni"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": -0.5
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "celebrity relationships",
+          "birthday celebrations"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": -0.5\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"celebrity relationships\", \"birthday celebrations\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": -0.5
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "celebrity relationships",
+          "birthday celebrations"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": null,
+        "justin_score": -0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:13.450880+00:00",
+      "input": {
+        "comment_text": "Free Justin button🔥🔥🔥",
+        "post_caption": "Hailey Bieber turned 29 and she obviously did so in style.⁠ ⁠ (📸/🎥: Hailey Bieber).",
+        "comment_likes": 0,
+        "target_entities": [
+          "Justin Baldoni"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "celebrity culture",
+          "fandom"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.5
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": -1.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"celebrity culture\", \"fandom\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.5\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "celebrity culture",
+          "fandom"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.5
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": null,
+        "justin_score": -1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:15.602013+00:00",
+      "input": {
+        "comment_text": "Parabensssss aproveita e mete o pé na bunda do Justin 🥳🤍🎉",
+        "post_caption": "Hailey Bieber turned 29 and she obviously did so in style.⁠ ⁠ (📸/🎥: Hailey Bieber).",
+        "comment_likes": 0,
+        "target_entities": [
+          "Justin Baldoni"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": -1.0
+        },
+        "emotion": "joy",
+        "stance": "oppose",
+        "topics": [
+          "birthday",
+          "relationship"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": -1.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"birthday\", \"relationship\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": -1.0
+        },
+        "emotion": "joy",
+        "stance": "oppose",
+        "topics": [
+          "birthday",
+          "relationship"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": null,
+        "justin_score": -1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:18.281759+00:00",
+      "input": {
+        "comment_text": "At least it was at a plantation …. Ahem Blake Lively I’m looking at you and Ryan 😒",
+        "post_caption": "Jon Gosselin and Stephanie Lebo are officially husband and wife! The reality TV star tied the knot in a beautiful Lancaster, Pennsylvania ceremony after four years of dating. In the heartwarming video, Jon and Stephanie exchange vows and share their love with friends and family in attendance. Watch now and join the celebration!",
+        "comment_likes": 0,
+        "target_entities": [
+          "Blake Lively",
+          "Ryan Reynolds",
+          "It Ends With Us",
+          "Blake & Ryan"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Ryan Reynolds": -0.5,
+          "It Ends With Us": 0.0,
+          "Blake & Ryan": -0.5
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "weddings",
+          "celebrity culture",
+          "plantation controversy"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.3
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.5,\n    \"Ryan Reynolds\": -0.5,\n    \"It Ends With Us\": 0.0,\n    \"Blake & Ryan\": -0.5\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"weddings\", \"celebrity culture\", \"plantation controversy\"],\n  \"other_entities\": [],\n  \"sarcasm\": true,\n  \"toxicity\": 0.3\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Ryan Reynolds": -0.5,
+          "It Ends With Us": 0.0,
+          "Blake & Ryan": -0.5
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "weddings",
+          "celebrity culture",
+          "plantation controversy"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.3
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -0.5,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:20.430800+00:00",
+      "input": {
+        "comment_text": "Blake lively was the worst choice for lily anyways. I LOVED those books. I was so excited for the movie. Blake ruined it entirely. I liked Justin tho",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 6578,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.8,
+          "Justin Baldoni": 0.5,
+          "It Ends With Us": 0.7
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "casting",
+          "book adaptation",
+          "author sentiment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.8,\n    \"Justin Baldoni\": 0.5,\n    \"It Ends With Us\": 0.7\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"casting\", \"book adaptation\", \"author sentiment\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.8,
+          "Justin Baldoni": 0.5,
+          "It Ends With Us": 0.7
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "casting",
+          "book adaptation",
+          "author sentiment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "blake_score": -0.8,
+        "justin_score": 0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:22.562891+00:00",
+      "input": {
+        "comment_text": "Don't worry Colleen, I never recommend any of your books either",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 6980,
+        "target_entities": []
+      },
+      "output": {
+        "entity_scores": {
+          "Colleen Hoover": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "Colleen Hoover",
+          "book recommendations"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.5
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Colleen Hoover\": -1.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"Colleen Hoover\", \"book recommendations\"],\n  \"other_entities\": [],\n  \"sarcasm\": true,\n  \"toxicity\": 0.5\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Colleen Hoover": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "Colleen Hoover",
+          "book recommendations"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.5
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": null,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:25.031781+00:00",
+      "input": {
+        "comment_text": "💐 You earned it.  You chose Blake",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 5149,
+        "target_entities": [
+          "Blake Lively",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": 0.5,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "neutral",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "author's feelings",
+          "recommendation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.1
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": 0.5,\n    \"It Ends With Us\": -0.5\n  },\n  \"emotion\": \"neutral\",\n  \"stance\": \"support\",\n  \"topics\": [\"legal battle\", \"author's feelings\", \"recommendation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.1\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": 0.5,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "neutral",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "author's feelings",
+          "recommendation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.1
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 2,
+        "blake_score": 0.5,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:27.211314+00:00",
+      "input": {
+        "comment_text": "I still can't help but wonder what this movie would have been like if Justin had directed it solo, his previous works show how good he is at giving life to such delicate stories",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 2859,
+        "target_entities": [
+          "Justin Baldoni",
+          "Blake Lively",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": 0.7,
+          "Blake Lively": 0.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": 0.5
+        },
+        "emotion": "neutral",
+        "stance": "support",
+        "topics": [
+          "movie direction",
+          "storytelling"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": 0.7,\n    \"Blake Lively\": 0.0,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": 0.5\n  },\n  \"emotion\": \"neutral\",\n  \"stance\": \"support\",\n  \"topics\": [\"movie direction\", \"storytelling\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": 0.7,
+          "Blake Lively": 0.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": 0.5
+        },
+        "emotion": "neutral",
+        "stance": "support",
+        "topics": [
+          "movie direction",
+          "storytelling"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": 0.0,
+        "justin_score": 0.7
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:30.464407+00:00",
+      "input": {
+        "comment_text": "Her lack of loyalty is the only thing that she should regret .  Justin was the one that push for the movie to be make and ultimately the one that make people more interested in the book but she turned her  back on him.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 1429,
+        "target_entities": [
+          "Justin Baldoni",
+          "Blake Lively",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": 0.8,
+          "Blake Lively": -0.6,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "loyalty",
+          "author reputation",
+          "movie adaptation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": 0.8,\n    \"Blake Lively\": -0.6,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": -0.5\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"loyalty\", \"author reputation\", \"movie adaptation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": 0.8,
+          "Blake Lively": -0.6,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "loyalty",
+          "author reputation",
+          "movie adaptation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -0.6,
+        "justin_score": 0.8
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:32.686996+00:00",
+      "input": {
+        "comment_text": "The book was great. The movie was okay. Totally left out parts or changed them. Still one of my favorite books by her.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 181,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": 0.0,
+          "Justin Baldoni": 0.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": 0.8
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "book adaptation",
+          "Colleen Hoover"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.1
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": 0.0,\n    \"Justin Baldoni\": 0.0,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": 0.8\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"book adaptation\", \"Colleen Hoover\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.1\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": 0.0,
+          "Justin Baldoni": 0.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": 0.8
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "book adaptation",
+          "Colleen Hoover"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.1
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": 0.0,
+        "justin_score": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:35.677634+00:00",
+      "input": {
+        "comment_text": "Now she wants sympathy, after being complicit in this whole facade of a case??!",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 171,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": -0.5,
+          "It Ends With Us": -0.3,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "author sentiment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.6
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.5,\n    \"Justin Baldoni\": -0.5,\n    \"It Ends With Us\": -0.3,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"author sentiment\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.6\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": -0.5,
+          "It Ends With Us": -0.3,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "author sentiment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.6
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -0.5,
+        "justin_score": -0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:37.782702+00:00",
+      "input": {
+        "comment_text": "She helped create few mess.  Hope she realizes that.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 724,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": -0.5,
+          "It Ends With Us": -0.3,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "It Ends With Us"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.5,\n    \"Justin Baldoni\": -0.5,\n    \"It Ends With Us\": -0.3,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"Colleen Hoover\", \"It Ends With Us\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": -0.5,
+          "It Ends With Us": -0.3,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "It Ends With Us"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -0.5,
+        "justin_score": -0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:39.824404+00:00",
+      "input": {
+        "comment_text": "Lmao forgetting the lawsuit, the she herself is problematic along with the books she writes. Blaming it all on actors is wild",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 322,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": -0.5,
+          "It Ends With Us": -0.7,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "lawsuit",
+          "Colleen Hoover",
+          "problematic behavior"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.4
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.5,\n    \"Justin Baldoni\": -0.5,\n    \"It Ends With Us\": -0.7,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"lawsuit\", \"Colleen Hoover\", \"problematic behavior\"],\n  \"other_entities\": [],\n  \"sarcasm\": true,\n  \"toxicity\": 0.4\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": -0.5,
+          "It Ends With Us": -0.7,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "lawsuit",
+          "Colleen Hoover",
+          "problematic behavior"
+        ],
+        "other_entities": [],
+        "sarcasm": true,
+        "toxicity": 0.4
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -0.5,
+        "justin_score": -0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:42.391416+00:00",
+      "input": {
+        "comment_text": "Well said. I can’t imagine anyone wanting to work with Blake or RR after this. A PR disaster that keeps getting worse.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 179,
+        "target_entities": [
+          "Blake Lively"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.8
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "PR disaster"
+        ],
+        "other_entities": [
+          "Colleen Hoover",
+          "Justin Baldoni"
+        ],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.8\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"PR disaster\"],\n  \"other_entities\": [\"Colleen Hoover\", \"Justin Baldoni\"],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.8
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "PR disaster"
+        ],
+        "other_entities": [
+          "Colleen Hoover",
+          "Justin Baldoni"
+        ],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": -0.8,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:44.925395+00:00",
+      "input": {
+        "comment_text": "The only thing shameful is her supporting Blake in this. Hopefully Blake’s career is done.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 1551,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -1.0,
+          "Justin Baldoni": 0.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "Blake Lively's career"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -1.0,\n    \"Justin Baldoni\": 0.0,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": 0.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"Colleen Hoover\", \"Blake Lively's career\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.7\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -1.0,
+          "Justin Baldoni": 0.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": 0.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "Blake Lively's career"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -1.0,
+        "justin_score": 0.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:46.630169+00:00",
+      "input": {
+        "comment_text": "The only shameful thing about this production is that Blake was cast in this film.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 178,
+        "target_entities": [
+          "Blake Lively"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "film production",
+          "Colleen Hoover"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.5
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -1.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"film production\", \"Colleen Hoover\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.5\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "film production",
+          "Colleen Hoover"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.5
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": -1.0,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:48.312746+00:00",
+      "input": {
+        "comment_text": "JUSTICE FOR JUSTIN",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 188,
+        "target_entities": [
+          "Justin Baldoni"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "It Ends With Us"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": 1.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legal battle\", \"Colleen Hoover\", \"It Ends With Us\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "It Ends With Us"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": null,
+        "justin_score": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:50.929679+00:00",
+      "input": {
+        "comment_text": "She should be embarrassed of her actions!!! #teamjustin",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 538,
+        "target_entities": [
+          "Justin Baldoni",
+          "Blake Lively",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0,
+          "Blake Lively": -1.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "anger",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "embarrassment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": 1.0,\n    \"Blake Lively\": -1.0,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": -0.5\n  },\n  \"emotion\": \"anger\",\n  \"stance\": \"support\",\n  \"topics\": [\"legal battle\", \"Colleen Hoover\", \"embarrassment\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.7\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0,
+          "Blake Lively": -1.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "anger",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "embarrassment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -1.0,
+        "justin_score": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:53.178733+00:00",
+      "input": {
+        "comment_text": "She should be embarrassed for a lot more than just that. Justice for Justin.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 4,
+        "target_entities": [
+          "Justin Baldoni",
+          "Blake Lively",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0,
+          "Blake Lively": -1.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "disgust",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "embarrassment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.3
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": 1.0,\n    \"Blake Lively\": -1.0,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": -0.5\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"support\",\n  \"topics\": [\"legal battle\", \"Colleen Hoover\", \"embarrassment\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.3\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0,
+          "Blake Lively": -1.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "disgust",
+        "stance": "support",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "embarrassment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.3
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -1.0,
+        "justin_score": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:55.447592+00:00",
+      "input": {
+        "comment_text": "So based on the comments we all still hate Blake.",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 402,
+        "target_entities": [
+          "Blake Lively"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "It Ends With Us"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -1.0\n  },\n  \"emotion\": \"disgust\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"Colleen Hoover\", \"It Ends With Us\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.7\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -1.0
+        },
+        "emotion": "disgust",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "Colleen Hoover",
+          "It Ends With Us"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.7
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "blake_score": -1.0,
+        "justin_score": null
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:22:57.701248+00:00",
+      "input": {
+        "comment_text": "She should be embarrased about betraying Justin",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 475,
+        "target_entities": [
+          "Justin Baldoni",
+          "Blake Lively",
+          "Taylor Swift",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0,
+          "Blake Lively": -1.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "betrayal",
+          "Colleen Hoover"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Justin Baldoni\": 1.0,\n    \"Blake Lively\": -1.0,\n    \"Taylor Swift\": 0.0,\n    \"It Ends With Us\": -0.5\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"betrayal\", \"Colleen Hoover\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Justin Baldoni": 1.0,
+          "Blake Lively": -1.0,
+          "Taylor Swift": 0.0,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "betrayal",
+          "Colleen Hoover"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "blake_score": -1.0,
+        "justin_score": 1.0
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:23:00.040158+00:00",
+      "input": {
+        "comment_text": "Funny, it seems like everyone who supported Blake has become reeeeaaaaallllyyyy quiet now. Reminder they all betrayed Justin, including Colleen",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 103,
+        "target_entities": [
+          "Blake Lively",
+          "Justin Baldoni",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": 0.5,
+          "It Ends With Us": -0.3
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "fandom support",
+          "author's feelings"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": -0.5,\n    \"Justin Baldoni\": 0.5,\n    \"It Ends With Us\": -0.3\n  },\n  \"emotion\": \"disappointment\",\n  \"stance\": \"oppose\",\n  \"topics\": [\"legal battle\", \"fandom support\", \"author's feelings\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.2\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": -0.5,
+          "Justin Baldoni": 0.5,
+          "It Ends With Us": -0.3
+        },
+        "emotion": "disappointment",
+        "stance": "oppose",
+        "topics": [
+          "legal battle",
+          "fandom support",
+          "author's feelings"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.2
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "blake_score": -0.5,
+        "justin_score": 0.5
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:23:01.688004+00:00",
+      "input": {
+        "comment_text": "Is it possible that Blake is telling the truth?",
+        "post_caption": "Colleen Hoover says the legal battle between Justin Baldoni and Blake Lively has tainted how she feels about her novel, 'It Ends With Us.'⁠ ⁠ I can't even recommend it anymore. I feel like [the lawsuit] has overshadowed it, the author tells ELLE magazine. I'm almost embarrassed to say I wrote it.⁠ ⁠ When people ask what I do, I'm just like, 'I'm a writer. Please don't ask me what I wrote.'⁠ ⁠ Colleen will be deposed for the case in a few weeks and says that Blake and Justin's ongoing conflict feels like a circus and is all-around sad.⁠ ⁠ This actually truly has impacted some of the actors' careers in huge ways... I'm just trying to stay removed from the negativity. I have my own story I could tell … but I don't want to bring attention to it, and I don't want to have to put someone else down to lift myself up.⁠ ⁠ Swipe for more from Colleen and head to the link in bio 🔗 to read her full interview with ELLE.⁠ ⁠ (📸: Getty Images, It Ends With Us).",
+        "comment_likes": 97,
+        "target_entities": [
+          "Blake Lively",
+          "It Ends With Us"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Blake Lively": 0.5,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "neutral",
+        "stance": "neutral",
+        "topics": [
+          "legal battle",
+          "author sentiment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Blake Lively\": 0.5,\n    \"It Ends With Us\": -0.5\n  },\n  \"emotion\": \"neutral\",\n  \"stance\": \"neutral\",\n  \"topics\": [\"legal battle\", \"author sentiment\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Blake Lively": 0.5,
+          "It Ends With Us": -0.5
+        },
+        "emotion": "neutral",
+        "stance": "neutral",
+        "topics": [
+          "legal battle",
+          "author sentiment"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 2,
+        "blake_score": 0.5,
+        "justin_score": null
+      }
+    }
+  ]
+}

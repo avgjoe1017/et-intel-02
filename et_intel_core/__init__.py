@@ -11,3 +11,13 @@ Core Philosophy:
 __version__ = "2.0.0"
 __author__ = "ET Intelligence Team"
 
+# Initialize logging on import
+from et_intel_core.logging_config import setup_logging, get_logger
+
+__all__ = [
+    "__version__",
+    "__author__",
+    "setup_logging",
+    "get_logger",
+]
+

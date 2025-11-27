@@ -1,0 +1,1024 @@
+{
+  "test_metadata": {
+    "timestamp": "2025-11-26T18:11:25.771259",
+    "comments_tested": 20,
+    "entities_available": [
+      "Blake Lively",
+      "Justin Baldoni",
+      "Ryan Reynolds",
+      "Taylor Swift",
+      "Travis Kelce",
+      "It Ends With Us",
+      "Taylor & Travis",
+      "Blake & Ryan"
+    ],
+    "total_api_calls": 20
+  },
+  "statistics": {
+    "with_entity_scores": 20,
+    "total_entity_scores": 55,
+    "avg_entity_scores_per_call": 2.75,
+    "emotion_distribution": {
+      "joy": 19,
+      "neutral": 1
+    },
+    "stance_distribution": {
+      "support": 19,
+      "neutral": 1
+    }
+  },
+  "detailed_results": [
+    {
+      "timestamp": "2025-11-26T18:10:41.278410",
+      "input": {
+        "comment_text": "🔥🔥🔥🔥",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 4,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:43.685399",
+      "input": {
+        "comment_text": "👏",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 20,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:45.952289",
+      "input": {
+        "comment_text": "❤️🔥",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 3,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:48.164477",
+      "input": {
+        "comment_text": "",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 0,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "neutral",
+        "stance": "neutral",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"neutral\",\n  \"stance\": \"neutral\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "neutral",
+        "stance": "neutral",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:50.969591",
+      "input": {
+        "comment_text": "B.jordan🔥🔥",
+        "post_caption": "A slew of stars showed up to honor Michael B. Jordan at the 39th annual American Cinematheque Awards ceremony.⁠ ⁠ From his longtime collaborator Ryan Coogler to his 'Creed' co-star Tessa Thompson and actors-filmmakers Bradley Cooper and Ben Affleck, the 'Sinners' star was feeling the love in Beverly Hills.⁠ ⁠ ⏩️ Swipe to see more of the celebration and Michael's moving speech. (📸/🎥: Getty Images).",
+        "comment_likes": 0,
+        "target_entities": [
+          "Ryan Reynolds",
+          "Blake & Ryan"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0,
+          "Blake": 0.0,
+          "Ryan": 0.0,
+          "Michael B. Jordan": 1.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "Michael B. Jordan",
+          "celebration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Ryan Reynolds\": 0.0,\n    \"Blake\": 0.0,\n    \"Ryan\": 0.0,\n    \"Michael B. Jordan\": 1.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"Michael B. Jordan\", \"celebration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0,
+          "Blake": 0.0,
+          "Ryan": 0.0,
+          "Michael B. Jordan": 1.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "Michael B. Jordan",
+          "celebration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 4,
+        "entity_score_count": 4
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:53.094577",
+      "input": {
+        "comment_text": "🔥🔥🫡",
+        "post_caption": "A slew of stars showed up to honor Michael B. Jordan at the 39th annual American Cinematheque Awards ceremony.⁠ ⁠ From his longtime collaborator Ryan Coogler to his 'Creed' co-star Tessa Thompson and actors-filmmakers Bradley Cooper and Ben Affleck, the 'Sinners' star was feeling the love in Beverly Hills.⁠ ⁠ ⏩️ Swipe to see more of the celebration and Michael's moving speech. (📸/🎥: Getty Images).",
+        "comment_likes": 0,
+        "target_entities": [
+          "Ryan Reynolds",
+          "Blake & Ryan"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0,
+          "Blake & Ryan": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Ryan Reynolds\": 0.0,\n    \"Blake & Ryan\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0,
+          "Blake & Ryan": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 2,
+        "entity_score_count": 2
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:55.733549",
+      "input": {
+        "comment_text": "Simone is so strong. Amazing woman ❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 314,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "strength",
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"strength\", \"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "strength",
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:10:57.795848",
+      "input": {
+        "comment_text": "👏🏽👏🏽👏🏽",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 7,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:00.469775",
+      "input": {
+        "comment_text": "She is very strong. This is so well deserved.❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 207,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "strength",
+          "celebration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"strength\", \"celebration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "strength",
+          "celebration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:02.917242",
+      "input": {
+        "comment_text": "❤️❤️❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 4,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:05.061174",
+      "input": {
+        "comment_text": "❤️❤️❤️❤️❤️❤️❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 6,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:07.159257",
+      "input": {
+        "comment_text": "❤️👏❤️👏❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 2,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:09.509632",
+      "input": {
+        "comment_text": "❤️❤️❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 1,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:11.869569",
+      "input": {
+        "comment_text": "🥰🥰🥰🙌🏾🙌🏾🙌🏾🙌🏾",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 13,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:14.719681",
+      "input": {
+        "comment_text": "😢👏🙏",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 3,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:17.003504",
+      "input": {
+        "comment_text": "🥺❤️",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 2,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "perseverance"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"perseverance\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "perseverance"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:18.997692",
+      "input": {
+        "comment_text": "Love you eternally chad 🕊️ 🖤🙏🏽",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 56,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 2,
+        "entity_score_count": 2
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:21.953313",
+      "input": {
+        "comment_text": "🔥❤️🔥👏👏👏",
+        "post_caption": "Chadwick Boseman's wife Simone Ledward-Boseman celebrated his legacy at the Walk of Fame ceremony with a heartfelt speech. In his own words, Chadwick Boseman shares his wisdom on creative work, perseverance, and chasing dreams. This is a must-watch for anyone looking to turn their vision into reality and overcome obstacles. Don't miss out on Chadwick's inspiring advice and learn how to stay motivated and focused on your goals. #ChadwickBoseman #WalkOfFame #Inspiration #CreativeWork #Motivation #Perseverance",
+        "comment_likes": 2,
+        "target_entities": [
+          "Taylor Swift"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Chadwick Boseman\": 1.0,\n    \"Simone Ledward-Boseman\": 1.0,\n    \"Taylor Swift\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"legacy\", \"inspiration\", \"motivation\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Chadwick Boseman": 1.0,
+          "Simone Ledward-Boseman": 1.0,
+          "Taylor Swift": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "legacy",
+          "inspiration",
+          "motivation"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 3,
+        "entity_score_count": 3
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:23.817780",
+      "input": {
+        "comment_text": "Her energy is so infectious 💛💫⚡️",
+        "post_caption": "Minka Kelly opens up about how changing her life first led to her love story with Imagine Dragons' frontman Dan Reynolds. In her new holiday film 'Champagne Problems' streaming on Netflix, she shares her inspiring journey of self-discovery and finding true love. Learn how doing your own 'homework' and finding your own center can lead to a happy relationship. Watch now and be inspired by Minka's relatable story.",
+        "comment_likes": 491,
+        "target_entities": [
+          "Ryan Reynolds"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "Minka Kelly",
+          "Dan Reynolds",
+          "self-discovery",
+          "love story"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Ryan Reynolds\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"Minka Kelly\", \"Dan Reynolds\", \"self-discovery\", \"love story\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "Minka Kelly",
+          "Dan Reynolds",
+          "self-discovery",
+          "love story"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "entity_score_count": 1
+      }
+    },
+    {
+      "timestamp": "2025-11-26T18:11:25.749619",
+      "input": {
+        "comment_text": "\"I think I changed my life first\" OH PERIOD",
+        "post_caption": "Minka Kelly opens up about how changing her life first led to her love story with Imagine Dragons' frontman Dan Reynolds. In her new holiday film 'Champagne Problems' streaming on Netflix, she shares her inspiring journey of self-discovery and finding true love. Learn how doing your own 'homework' and finding your own center can lead to a happy relationship. Watch now and be inspired by Minka's relatable story.",
+        "comment_likes": 1663,
+        "target_entities": [
+          "Ryan Reynolds"
+        ]
+      },
+      "output": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "self-discovery",
+          "love story",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "raw_response": "{\n  \"entity_scores\": {\n    \"Ryan Reynolds\": 0.0\n  },\n  \"emotion\": \"joy\",\n  \"stance\": \"support\",\n  \"topics\": [\"self-discovery\", \"love story\", \"inspiration\"],\n  \"other_entities\": [],\n  \"sarcasm\": false,\n  \"toxicity\": 0.0\n}",
+      "raw_response_parsed": {
+        "entity_scores": {
+          "Ryan Reynolds": 0.0
+        },
+        "emotion": "joy",
+        "stance": "support",
+        "topics": [
+          "self-discovery",
+          "love story",
+          "inspiration"
+        ],
+        "other_entities": [],
+        "sarcasm": false,
+        "toxicity": 0.0
+      },
+      "validation": {
+        "has_entity_scores": true,
+        "entity_count": 1,
+        "entity_score_count": 1
+      }
+    }
+  ]
+}
